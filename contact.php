@@ -2,7 +2,7 @@
 
 if(isset($_POST['email'])) {
 
-    $email_to = "end@email.com";
+    $email_to = "mcsm.ads@uea.edu.br";
  
     $email_subject = "Website Contact";
 
@@ -83,7 +83,7 @@ if(isset($_POST['email'])) {
  
  
  
-Thank you for contacting me. Will be in touch with you very soon.
+Obrigado por entrar em contato, retornaremos em breve
  
  
  
