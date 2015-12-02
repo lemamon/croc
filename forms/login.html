@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="icon" href="favicon.ico" >
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="theme-color" content="#fc4e4e">
+    <title>Frango Croc</title>
+
+    <!-- CSS  -->
+    <link href="../min/plugin-min.css" type="text/css" rel="stylesheet">
+    <link href="../min/custom-min.css" type="text/css" rel="stylesheet" >
+    <link href="../css/form-login.css" type="text/css" rel="stylesheet">
+</head>
+<body id="top" class="scrollspy">
+
+<!-- Pre Loader -->
+<div id="loader-wrapper">
+    <div id="loader"></div>
+ 
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+ 
+</div>
+
+<!--Navigation-->
+ <div class="navbar-fixed">
+    <nav id="nav_f" class="default_color" role="navigation">
+        <div class="container">
+            <div class="nav-wrapper">
+            <!--<a href="#" id="logo-container" class="brand-logo">Frango Croc</a>-->
+                <a href="#" id="logo-container" class="brand-logo">
+                    <img src="../img/logo.png" width="60px" height="80px">
+                </a> 
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="../index.html#intro">Sobre</a></li>
+                    <li><a href="../index.html#work">Cardápio</a></li>
+                    <li><a href="../index.html#team">Equipe</a></li>
+                    <li><a href="../index.html#contact">Contato</a></li>  
+                    <li><a href="../croc/forms/cadastro.html">Cadastre-se</a></li>                      
+                </ul>
+                <ul id="nav-mobile" class="side-nav">
+                    <li><a href="#intro">Sobre</a></li>
+                    <li><a href="#work">Cardápio</a></li>
+                    <li><a href="#team">Equipe</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                    <li><a href="../croc/forms/cadastro.html">Cadastre-se</a></li>  
+                </ul>
+            <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+            </div>
+        </div>
+    </nav>
+</div>
+<!--Intro and service-->
+<form action="../scripts/login.php" method="post" class="form-login">
+    <h4 class="desc_status_pedido">Em nosso sistema, você poderá acompanhar o <i>status</i> do seu pedido!</h4>
+    <img src="../img/banner_status.png" class="img_banner_status">
+
+
+    <h3>Login</h3>
+    <ul>
+        <li><input placeholder="Número de telefone ou e-mail" type="text"></li>
+        <li><input placeholder="Senha" type="password"></li>
+        <li><input type="submit" class="btEntrar" value="Entrar"></li>
+    </ul>
+</form>
+
+
+
+
+<!--Parallax-->
+<div class="parallax-container">
+    <div class="parallax"><img src="img/parallax1.jpg"></div>
+</div>
+
+<!--Footer-->
+<footer id="contact" class="page-footer default_color scrollspy">
+    <div class="container">  
+        <div class="row">
+            <div class="col l6 s12">
+                <form class="col s12" action="contact.php" method="post">
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <i class="mdi-action-account-circle prefix white-text"></i>
+                            <input id="icon_prefix" name="name" type="text" class="validate white-text">
+                            <label for="icon_prefix" class="white-text">First Name</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <i class="mdi-communication-email prefix white-text"></i>
+                            <input id="icon_email" name="email" type="email" class="validate white-text">
+                            <label for="icon_email" class="white-text">Email-id</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <i class="mdi-editor-mode-edit prefix white-text"></i>
+                            <textarea id="icon_prefix2" name="message" class="materialize-textarea white-text"></textarea>
+                            <label for="icon_prefix2" class="white-text">Digite aqui seu pedido com a quantidade e código do produto em nosso cardápio e inclua seu telefone de contato.</label>
+                        </div>
+                        <div class="col offset-s7 s5">
+                            <button class="btn waves-effect waves-light red darken-1" type="submit">Submit
+                                <i class="mdi-content-send right white-text"></i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col l3 s12">
+                <h5 class="white-text">Faça seu pedido agora por telefone ou e-mail</h5>
+                <ul>
+                    <li><a class="white-text">Telefones:</a></li>
+                    <li><a class="white-text">+55 92 3221-9634</a></li>
+                    <li><a class="white-text">+55 92 99523-1487</a></li>
+                    <li><a class="white-text">Email:</a></li>
+                    <li><a class="white-text"  href="mailto:mcsm.ads@uea.edu.br" >fc@fc.com</a></li>
+                </ul>
+            </div>
+            <div class="col l3 s12">
+                <h5 class="white-text">Social</h5>
+                <ul>
+                    <li>
+                        <a class="white-text" href="#">
+                            <i class="small fa fa-facebook-square white-text"></i> Facebook
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright default_color">
+        <div class="container">
+            Made by <a class="white-text">Frango Croc.</a>
+        </div>
+    </div>
+</footer>
+
+
+    <!--  Scripts-->
+    <script src="../min/plugin-min.js"></script>
+    <script src="../min/custom-min.js"></script>
+
+    </body>
+</html>
