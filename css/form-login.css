@@ -1,0 +1,40 @@
+/*Mudando a cor do placeholder*/
+::-webkit-input-placeholder {
+   color: #000;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #000;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #000;  
+}
+
+:-ms-input-placeholder {  
+   color: #000;  
+}
+
+
+.form-login{
+    border: 0px solid #000;
+    width: 50%;
+    margin: auto;
+}
+
+.btEntrar{
+    width: 35%;
+    height: 40px;
+}
+
+.desc_status_pedido{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 35px;
+}
+
+.img_banner_status{
+    display: block !important;
+    height: 130px;
+    margin: auto;
+}
