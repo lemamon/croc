@@ -4,7 +4,7 @@ $(function(){
 	
 	$.get("../scripts/verificar_user_logado.php", function(data){
 		if(data.length == 0){
-			location = "forms/login.html";	
+			//location = "login.html";	
 		}else{
 			location = "../userarea.html";	
 		}
