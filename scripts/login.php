@@ -16,9 +16,9 @@
 
 		session_start();
 		$_SESSION["cpf"] = $dados["cpf"];
-		$_SESSION["user"] = $dados["mail"];
-		$_SESSION["phone"] = $dados["phone"];
 		$_SESSION["name"] = $dados["name"];
+		$_SESSION["mail"] = $dados["mail"];
+		$_SESSION["phone"] = $dados["phone"];
 	}
 	echo json_encode($dados);
 ?>
