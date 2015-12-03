@@ -1,4 +1,3 @@
-<meta charset="utf-8">
 <?php
 	include_once("conexao.php");
 
@@ -11,19 +10,15 @@
 	$query = "SELECT * FROM tb_user WHERE (phone = '$user' OR mail = '$user') AND senha = '$pass'";
 	$result = mysqli_query($conexao, $query);
 	$num_rows = mysqli_num_rows($result);
-
+	$dados = array();
 	if($num_rows > 0){
-		$dados = mysqli_fetch_array($result);
+		$dados = mysqli_fetch_array($result, MYSQLI_ASSOC);	
 
 		session_start();
 		$_SESSION["cpf"] = $dados["cpf"];
 		$_SESSION["user"] = $dados["mail"];
 		$_SESSION["phone"] = $dados["phone"];
 		$_SESSION["name"] = $dados["name"];
-
-		header("location: http://www.google.com");
-	}else{
-		echo "<script>alert('Usuário não encontrado!');location='../forms/login.html'</script>";
 	}
-
+	echo json_encode($dados);
 ?>
