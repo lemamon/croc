@@ -1,12 +1,15 @@
 $(function(){
 
 	$("#not-found").hide();
-	if (typeof(Storage) !== "undefined") {
-	    // Store
-		if(sessionStorage.getItem("name") != null){
-			location="../userarea.html";	
+	
+	$.get("../scripts/verificar_user_logado.php", function(data){
+		if(data.length == 0){
+			location = "forms/login.html";	
+		}else{
+			location = "../userarea.html";	
 		}
-	}
+	}, 'json');
+
 
 	$("#btEntrar").click(function(){
 		verificarUsuario();
