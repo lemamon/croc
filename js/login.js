@@ -9,6 +9,7 @@ $(function(){
 	}
 
 	$("#btEntrar").click(function(){
+		verificarUsuario();
 	});
 
 	$( "#pass" ).on( "keydown", function(event) {
