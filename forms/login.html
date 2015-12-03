@@ -9,8 +9,12 @@
 
     <!-- CSS  -->
     <link href="../min/plugin-min.css" type="text/css" rel="stylesheet">
-    <link href="../min/custom-min.css" type="text/css" rel="stylesheet" >
+    <link href="../min/custom-min.css" type="text/css" rel="stylesheet">
     <link href="../css/form-login.css" type="text/css" rel="stylesheet">
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
 </head>
 <body id="top" class="scrollspy">
 
@@ -54,12 +58,16 @@
     </nav>
 </div>
 <!--Intro and service-->
-<form action="../scripts/login.php" method="post" class="form-login">
+<form id="formLogin" class="form-login">
     <h3>Login</h3>
+    <div class="chip" id="not-found">
+        Dados não encontrados.
+        <i class="material-icons">close</i>
+    </div>
     <ul>
-        <li><input placeholder="Número de telefone ou e-mail" type="text" name="user"></li>
-        <li><input placeholder="Senha" type="password" name="pass"></li>
-        <li><input type="submit" class="btEntrar" value="Entrar"></li>
+        <li><input placeholder="Número de telefone ou e-mail" type="text" name="user" id="user"></li>
+        <li><input placeholder="Senha" type="password" name="pass" id="pass"></li>
+        <li><input type="button" class="btEntrar" id="btEntrar" value="Entrar"></li>
     </ul>
 </form>
 
@@ -134,6 +142,7 @@
     <!--  Scripts-->
     <script src="../min/plugin-min.js"></script>
     <script src="../min/custom-min.js"></script>
+    <script src="../js/login.js"></script>
 
     </body>
 </html>
