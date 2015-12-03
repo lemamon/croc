@@ -1,0 +1,14 @@
+.hello-user{
+    width: 90%;
+    float:left;
+    padding-left: 3%;
+}
+
+.btn-order{
+    float:left;
+    margin-top: 20px;
+}
+
+.clear{
+    clear: both;
+}
