@@ -23,3 +23,15 @@ function scaleCard(e){var el=closest(e);var target=el,id=target.getAttribute('da
 function onAnimated(card,popup){card.addEventListener(transEndEventName,function transitionEnded(){card.style['opacity']=0;popup.style['visibility']='visible';popup.style['zIndex']=9999;card.removeEventListener(transEndEventName,transitionEnded);});}
 function onPopupClick(card,popup){popup.addEventListener('click',function toggleVisibility(e){var size=getDifference(popup,card);card.style['opacity']=1;card.style['borderRadius']='6px';hidePopup(e);transformCard(card,size);},false);}
 function hidePopup(e){e.target.style['visibility']='hidden';e.target.style['zIndex']=2;}});})(jQuery);
+
+$(function(){
+	$.get("../croc/scripts/verificar_user_logado.php", function(data){
+		if(data.length == 0){
+			$(".cadastrar-link, .login-link").show();
+			$(".logout-link, .userarea-link").hide();
+		}else{
+			$(".cadastrar-link, .login-link").hide();
+			$(".logout-link, .userarea-link").show();
+		}
+	}, 'json');
+});
