@@ -1,6 +1,7 @@
 $(function(){
 
 	$("#not-found").hide();
+	$("#user").focus();
 	
 	$.get("../scripts/verificar_user_logado.php", function(data){
 		if(data.length == 0){
