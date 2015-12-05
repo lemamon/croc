@@ -19,6 +19,7 @@
 		$_SESSION["name"] = $dados["name"];
 		$_SESSION["mail"] = $dados["mail"];
 		$_SESSION["phone"] = $dados["phone"];
+		$_SESSION["admin"] = $dados["admin"];
 	}
 	echo json_encode($dados);
 ?>
