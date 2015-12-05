@@ -32,6 +32,12 @@ $(function(){
 		}else{
 			$(".cadastrar-link, .login-link").hide();
 			$(".logout-link, .userarea-link").show();
+			if(data.admin == 1){
+				$(".centro-user").hide();
+				$(".userarea-link").text("Área do Administrador");
+			}else{
+				$(".centro-user").show();
+			}
 		}
 	}, 'json');
 });
