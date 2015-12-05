@@ -31,6 +31,7 @@ CREATE TABLE `tb_user` (
   `phone` varchar(25) NOT NULL,
   `mail` varchar(255) NOT NULL,
   `senha` varchar(255) NOT NULL,
+  `admin` tinyint(1) DEFAULT '0',
   PRIMARY KEY (`cpf`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -41,7 +42,7 @@ CREATE TABLE `tb_user` (
 
 LOCK TABLES `tb_user` WRITE;
 /*!40000 ALTER TABLE `tb_user` DISABLE KEYS */;
-INSERT INTO `tb_user` VALUES ('123','Satan','admin','666','admin','admin'),('321','user','user','user','user','user'),('700.004.982-03','George Lucas Bentes Nunes','Av Burity 9999 Residencial Eliza Miranda, BL-B, AP 402, AMAP','+55 92 98192-6067','george.bentes@gmail.com','fuck'),('831.641.032-04','Matheus Clark dos Santos Monte','rua cidadania 96 69097186','+55 92 995231487','casdas@adfas','123456');
+INSERT INTO `tb_user` VALUES ('123','admin','admin','666','admin','admin',1),('321','user','user','user','user','user',0),('700.004.982-03','George Lucas Bentes Nunes','Av Burity 9999 Residencial Eliza Miranda, BL-B, AP 402, AMAP','+55 92 98192-6067','george.bentes@gmail.com','fuck',0),('831.641.032-04','Matheus Clark dos Santos Monte','rua cidadania 96 69097186','+55 92 995231487','casdas@adfas','123456',0);
 /*!40000 ALTER TABLE `tb_user` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -54,4 +55,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2015-12-03 17:04:59
+-- Dump completed on 2015-12-04 19:59:08
