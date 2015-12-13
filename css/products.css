@@ -1,0 +1,58 @@
+.hello-user{
+    width: 80%;
+    float:left;
+    padding-left: 3%;
+}
+
+.btn-add-product{
+	display: block !important;
+	margin: auto;
+	width: 19%;
+	float: left;
+	margin-top: 26px;
+}
+
+.clear{
+    clear: both;
+}
+
+.menu-principal h5{
+	padding-left: 15px;
+}
+
+.menu-principal{
+	float: left;
+}
+
+.modal_header{
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 10px;
+	text-transform: uppercase;
+	font-size: 18px;
+}
+
+.product_edit_img{
+	height: 200px !important;
+	width: 100px !important;
+}
+
+/*------
+	Sobrescrevendo alguns padrões 
+	do framework de material design 
+------ */
+.collection{
+	width: 21%;	
+}
+.collection a.collection-item {
+	color: #FC4E4E !important;
+}
+
+.collection .collection-item.active {
+    background-color: #FC4E4E !important;
+    color: #EAFAF9 !important;
+}
+
+.row .col.m7 {
+    width: 30.333% !important;
+    margin-left: 0px;
+}

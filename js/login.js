@@ -7,7 +7,7 @@ $(function(){
 		if(data.length == 0){
 			//location = "login.html";	
 		}else{
-			location = "../userarea.html";	
+			location = "../orders.html";	
 		}
 	}, 'json');
 
@@ -39,14 +39,7 @@ $(function(){
 				$("#user").val("");
 				$("#not-found").show().fadeOut(3000);
 			}else{
-				if (typeof(Storage) !== "undefined") {
-				    // Store
-					sessionStorage.setItem("name", data.name);
-					sessionStorage.setItem("cpf", data.cpf);
-					sessionStorage.setItem("phone", data.phone);
-					sessionStorage.setItem("mail", data.mail);
-					location="../userarea.html";
-				}
+				location="../orders.html";
 			}
 		}, 'json');
     }

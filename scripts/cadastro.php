@@ -9,7 +9,7 @@
 	$phone = $_POST["phone"];
 	$senha = $_POST["senha"];
 	
-	$query = "INSERT INTO `tb_user`(`cpf`, `name`, `adress`, `phone`, `mail`, `senha`)  VALUES ('$cpf', '$name', '$adress', '$phone', '$mail', '$senha')";
+	$query = "INSERT INTO `tb_user`(`cpf`, `name`, `address`, `phone`, `mail`, `senha`)  VALUES ('$cpf', '$name', '$adress', '$phone', '$mail', '$senha')";
 	
 	mysqli_query($conexao, $query);
 	

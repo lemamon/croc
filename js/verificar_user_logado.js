@@ -5,7 +5,16 @@ $(function(){
 	$.get("scripts/verificar_user_logado.php", function(data){
 		if(data.length == 0){
 			location = "forms/login.html";
+			$(".cadastrar-link").show();
+			$(".login-link").show();
+			$(".userarea-link").hide();
+			$(".logout-link").hide();
 		}else{
+			$(".cadastrar-link").hide();
+			$(".login-link").hide();
+			$(".userarea-link").show();
+			$(".logout-link").show();
+
 			var username = data.name;
 			username = username.split(" ");
 			if(username.length > 1){
