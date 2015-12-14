@@ -1,0 +1,64 @@
+.hello-user{
+    width: 80%;
+    float:left;
+    padding-left: 3%;
+}
+
+.btn-order{
+	display: block !important;
+	margin: auto;
+	border: 3px solid #008000;
+	width: 26%;
+}
+
+.clear{
+    clear: both;
+}
+
+.menu-principal h5{
+	padding-left: 15px;
+}
+
+.menu-principal{
+	float: left;
+}
+.zero-pedidos{
+	float: left;
+	border: 0px solid #000;
+	width:77%;
+}
+
+.zero-pedidos img{
+	display: block;
+	border: 0px solid #000;
+	margin: auto;
+}
+
+.centro-user{
+	margin-bottom: 50px !important;
+}
+
+.qtde{
+	width:30% !important;
+}
+
+.total-order-price{
+	display: block;
+	margin-top: 60px;
+
+}
+/*------
+	Sobrescrevendo alguns padrões 
+	do framework de material design 
+------ */
+.collection{
+	width: 21%;	
+}
+.collection a.collection-item {
+	color: #FC4E4E !important;
+}
+
+.collection .collection-item.active {
+    background-color: #FC4E4E !important;
+    color: #EAFAF9 !important;
+}

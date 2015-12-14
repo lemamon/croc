@@ -15,6 +15,7 @@
 		$dados = mysqli_fetch_array($result, MYSQLI_ASSOC);	
 
 		session_start();
+		$_SESSION["id"] = $dados["id"];
 		$_SESSION["cpf"] = $dados["cpf"];
 		$_SESSION["name"] = $dados["name"];
 		$_SESSION["mail"] = $dados["mail"];
